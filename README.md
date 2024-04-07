@@ -1,5 +1,6 @@
-conexion a base de datos con node JS
+conexion a base de datos con node JS MySQL
 ----------------------------------------
+tener insatalado node js
 
 crear la base de datos importando el sql
 
