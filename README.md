@@ -1,7 +1,7 @@
 conexion a base de datos con node JS
 ----------------------------------------
 
-crear la base de datos importarno el sql
+crear la base de datos importando el sql
 
 extraer aqui el rar
 
