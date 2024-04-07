@@ -1,0 +1,43 @@
+
+SELECT nombre, trabajo FROM empleados;
+/* Filas afectadas: 0  Filas encontradas: 21  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT nombre, edad FROM empleados;
+/* Filas afectadas: 0  Filas encontradas: 21  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT nombre, edad FROM empleados WHERE trabajo LIKE 'Programador%' OR trabajo = 'Desarrollador Web';
+/* Filas afectadas: 0  Filas encontradas: 8  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT * FROM empleados WHERE edad > 30;
+/* Filas afectadas: 0  Filas encontradas: 14  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT apellido, mail FROM empleados WHERE nombre = 'Juan';
+/* Filas afectadas: 0  Filas encontradas: 2  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT nombre FROM empleados WHERE trabajo = 'Programador' OR trabajo = 'Desarrollador Web';
+/* Filas afectadas: 0  Filas encontradas: 6  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+
+SELECT id_emp, nombre, apellido, trabajo FROM empleados WHERE id_emp BETWEEN 15 AND 20;
+/* Filas afectadas: 0  Filas encontradas: 6  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT * FROM empleados WHERE trabajo = 'Programador' AND salario < 80000;
+/* Filas afectadas: 0  Filas encontradas: 2  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT * FROM empleados WHERE trabajo = 'Programador' AND salario BETWEEN 75000 AND 90000;
+/* Filas afectadas: 0  Filas encontradas: 3  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT * FROM empleados WHERE apellido LIKE 'S%';
+/* Filas afectadas: 0  Filas encontradas: 4  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+SELECT * FROM empleados WHERE nombre LIKE '%l';
+/* Filas afectadas: 0  Filas encontradas: 2  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+INSERT INTO empleados (nombre, apellido, trabajo, edad, salario, mail) VALUES ('Francisco', 'Perez', 'Programador', 26, 90000, 'francisco@bignet.com');
+/* Filas afectadas: 1  Filas encontradas: 0  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+DELETE FROM empleados WHERE nombre = 'Hernan' AND apellido = 'Rosso';
+/* Filas afectadas: 1  Filas encontradas: 0  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
+
+UPDATE empleados SET salario = 90000 WHERE nombre = 'Daniel' AND apellido = 'Gutierrez';
+/* Filas afectadas: 1  Filas encontradas: 0  Advertencias: 0  Duración para 1 consulta: 0,000 seg. */
