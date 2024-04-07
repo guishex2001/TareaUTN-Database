@@ -1,4 +1,4 @@
-conexion a base de datos con node JS MySQL
+conexion a base de datos con node JS - MySQL
 ----------------------------------------
 tener insatalado node js
 
